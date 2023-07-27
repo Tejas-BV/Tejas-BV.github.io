@@ -1,0 +1,439 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    width: 340px;
+    border-radius: 1rem;
+    background-color: #000000;
+    margin-right: 0.5rem;
+}
+
+.maincontent{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem;
+}
+
+.musicplayer{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #121212;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95px;
+    padding: 0.5rem 0.75rem;
+    
+}
+
+.nav_option{
+    transition: 0.4s;
+    line-height: 2.rem;
+    opacity: 0.5;
+    padding: 0.7rem 0.75rem;
+}
+
+.nav_option i{
+    font-size: 1.25rem;
+    background-color: #121212;
+}
+
+.nav_option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.nav_option:hover{
+    opacity: 1;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem ;
+    padding: 0.5rem 0.75rem;
+   
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.lib_option img{
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+
+.icons i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+ 
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.5rem 0;
+    padding: 0.5rem 1.25rem;
+}
+
+.box-p1{
+    font-size: 1rem; 
+    font-weight: 600;
+}
+
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    
+}
+
+.lib-box .badge{
+    opacity: 0.8;
+}
+
+.lib-box .badge:hover{
+    opacity: 1;
+    scale: 1.03;
+}
+
+.box-2{
+    height: 9.25rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.5rem 0;
+    padding: 0.5rem 1.25rem;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.5rem;
+}
+
+.black{
+    background-color: #000000;
+    color: white;
+}
+
+.nav-item{
+    margin-right: 1rem;
+}
+
+.nav-item:hover{
+    scale: 1.03;
+}
+
+@media (max-width: 1000px) {
+    .hide{
+        display: none;
+    }
+}
+
+
+.card{
+    border-radius: 1rem;
+    background-color: #1a1919;
+    height: 15rem;
+    width: 10rem;
+    padding: 1rem;
+    transition: 0.3s;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    opacity: 0.7;
+    font-size: smaller;
+}
+.card:hover{
+    background-color: #232323;
+}
+
+.card img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card1{
+    border-radius: 0.5rem;
+    background-color: #1a1919;
+    height: 15.5rem;
+    width: 10rem;
+    padding: 1rem;
+    transition: 0.3s;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    
+}
+
+.card1 img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5px;
+}
+
+.card1:hover{
+    background-color: #232323;
+}
+
+.footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top : 1px solid white;
+    opacity: 0.4;
+}
+
+.album{
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+}
+
+.player{
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.controls{
+    width: 25%;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls-icons{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+}
+
+.player-controls-icons:hover{
+    opacity: 1;
+    
+}
+
+.play:hover{
+    scale: 1.1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #dddddd98;
+    border-radius: 100px;
+    height: 0.20rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -5.2px;
+}
+
+.album img{
+    height: 3.5rem;
+    margin-left: 0.70rem;
+    border-radius: 4px;
+}
+
+.album{
+    display: flex;
+   
+    justify-content:flex-start ;
+    align-items: center;
+}
+
+.playback-info {
+    display: flex;
+    align-items: center;
+
+  }
+  
+ 
+  .song-info h2 {
+    font-size: small;
+    margin: 0;
+  }
+
+  .song-info h2:hover{
+    text-decoration: white underline;
+  }
+
+  .song-info p{
+    font-size: x-small;
+    opacity: 0.7;
+  }
+
+  .song-info{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    line-height: 0.6rem;
+  }
+
+  .playback-bar{
+    font-size: x-small;
+    opacity: 0.8;
+  }
+
+  .controls{
+    margin: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+ 
+
+  .vol{
+    appearance: none;
+    width: 27%;
+    cursor: pointer;
+    background-color: rgb(3, 3, 3);
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.vol::-webkit-slider-runnable-track{
+    background-color: #ffffff;
+    border-radius: 100px;
+    height: 0.20rem;
+    line-height: 2rem;
+}
+
+.vol::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -5.2px;
+}   
+
+.i1{
+    height: 2.2rem;
+}
+
+.i2{
+    height: 2.2rem;
+}
+
+.i3{
+    height: 1.3rem;
+}
+
+.i4{
+    height: 1rem;
+}
+
+.i5{
+    height: 2.5rem;
+}
+
+.controls img{
+    margin-left: 0.5rem;
+    opacity: 0.9;
+}
+
+.controls img:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
